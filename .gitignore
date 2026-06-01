@@ -34,5 +34,5 @@ xcuserdata/
 *.report
 
 !Sources/SileroCoreML/Resources/
-!Sources/SileroCoreML/Resources/SileroVAD.mlpackage/
-!Sources/SileroCoreML/Resources/SileroVAD.mlpackage/**
+!Sources/SileroCoreML/Resources/SileroVADModel.mlpackage/
+!Sources/SileroCoreML/Resources/SileroVADModel.mlpackage/**
