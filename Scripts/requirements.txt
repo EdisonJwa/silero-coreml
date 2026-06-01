@@ -1,0 +1,8 @@
+# Prefer the tested CoreMLTools 9.0 conversion/validation environment.
+torch>=2.7,<2.8
+torchaudio>=2.7,<2.8
+silero-vad>=6.2
+coremltools>=9.0
+onnx>=1.16
+onnxruntime>=1.18
+numpy
