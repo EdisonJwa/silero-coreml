@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "record_type": "model_provenance_manifest",
+  "model_family": "Silero VAD",
+  "upstream": {
+    "owner": "snakers4",
+    "repository": "silero-vad",
+    "release_tag": "v6.2.1",
+    "commit": "7e30209a3e901f9842f81b225f3e93d8199902b1",
+    "package_version": "6.2.1",
+    "license": "MIT",
+    "source_of_truth": "https://github.com/snakers4/silero-vad/tree/v6.2.1"
+  },
+  "policy": {
+    "bundled_in_repo": true,
+    "approved_for_commit": true,
+    "notes": [
+      "This repository bundles a validated CoreML conversion of the pinned Silero VAD artifact.",
+      "Raw upstream model artifacts remain unbundled and should stay in ignored local workspaces.",
+      "Use the release tag and artifact SHA-256 values for reproducibility; do not pin moving master."
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "src/silero_vad/data/silero_vad.jit",
+      "filename": "silero_vad.jit",
+      "format": ".jit",
+      "blob_sha": "5c6988d663950a93a5f0d6c38c2fe024653ec552",
+      "sha256": "e1122837f4154c511485fe0b9c64455f7b929c96fbb8d79fbdb336383ebd3720",
+      "size_bytes": 2272526,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad.jit"
+    },
+    {
+      "path": "src/silero_vad/data/silero_vad.onnx",
+      "filename": "silero_vad.onnx",
+      "format": ".onnx",
+      "blob_sha": "80c5592ef1f4c9ede3e357bbd02eb863358a6a9d",
+      "sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+      "size_bytes": 2327524,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad.onnx"
+    },
+    {
+      "path": "src/silero_vad/data/silero_vad_16k.safetensors",
+      "filename": "silero_vad_16k.safetensors",
+      "format": ".safetensors",
+      "blob_sha": "367975dcd8924bd8f17254f3da99361be0a3b928",
+      "sha256": "c59271c284ae9c8335d795d60e0bfdb71aaaceec578d9bd9ffc1b8153c319ea1",
+      "size_bytes": 1239748,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad_16k.safetensors"
+    },
+    {
+      "path": "src/silero_vad/data/silero_vad_16k_op15.onnx",
+      "filename": "silero_vad_16k_op15.onnx",
+      "format": ".onnx",
+      "blob_sha": "625ad8909b1abdba2292f3a9a10db6864fd5d561",
+      "sha256": "7ed98ddbad84ccac4cd0aeb3099049280713df825c610a8ed34543318f1b2c49",
+      "size_bytes": 1289603,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad_16k_op15.onnx"
+    },
+    {
+      "path": "src/silero_vad/data/silero_vad_half.onnx",
+      "filename": "silero_vad_half.onnx",
+      "format": ".onnx",
+      "blob_sha": "97e39fb3543dfb78814af3943f059c6bbc969bd0",
+      "sha256": "1e0b195ad4806595ef4466f419d16fca7e4afcfc6669b8c0b5f76ea87547c769",
+      "size_bytes": 1280395,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad_half.onnx"
+    },
+    {
+      "path": "src/silero_vad/data/silero_vad_op18_ifless.onnx",
+      "filename": "silero_vad_op18_ifless.onnx",
+      "format": ".onnx",
+      "blob_sha": "4517e2f93122d7f1c2ac054ca6e61f670a205d98",
+      "sha256": "7671cd04b004e9076da0d4a7b1a5aec36adf161c39230c1cb94a4fd5db6bbd28",
+      "size_bytes": 2845718,
+      "raw_url": "https://raw.githubusercontent.com/snakers4/silero-vad/7e30209a3e901f9842f81b225f3e93d8199902b1/src/silero_vad/data/silero_vad_op18_ifless.onnx"
+    }
+  ]
+}
