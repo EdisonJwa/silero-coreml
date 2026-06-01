@@ -1,0 +1,12 @@
+Chanora Licensing Placeholder
+============================
+
+Copyright (c) Chanora contributors.
+
+This repository is intended to be released by Chanora under a dual-license model of MIT OR Apache-2.0, subject to Chanora approval and publication of the final license text.
+
+Until that approval is recorded, treat this repository as a Chanora-owned private scaffold.
+
+The bundled Silero VAD model artifact is derived from `snakers4/silero-vad`, which is distributed under the MIT License. See `THIRD_PARTY_NOTICES.md` for the required upstream notice.
+
+Do not infer any license grant beyond what Chanora separately approves in writing.

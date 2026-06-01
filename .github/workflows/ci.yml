@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  swift:
+    name: Swift tests
+    runs-on: macos-14
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Swift package tests
+        run: swift test
+
+  python:
+    name: Python unit tests
+    runs-on: macos-14
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Python unit tests
+        run: python3 -m unittest discover -s Scripts/tests
