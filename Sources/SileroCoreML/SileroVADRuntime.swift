@@ -1,7 +1,7 @@
 import CoreML
 import Foundation
 
-public final class SileroVAD: @unchecked Sendable {
+public final class SileroVADRunner: @unchecked Sendable {
     public static let modelVersion = "6.2.1"
     public static let sampleRate = SileroCoreML.sampleRate
     public static let chunkSize = SileroCoreML.chunkSize

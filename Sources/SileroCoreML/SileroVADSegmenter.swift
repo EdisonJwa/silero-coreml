@@ -8,8 +8,8 @@ public struct SileroVADSegmenterConfiguration: Equatable, Sendable {
     public var speechPadding: TimeInterval
 
     public init(
-        entryThreshold: Float = SileroVAD.defaultThreshold,
-        exitThreshold: Float = SileroVAD.defaultThreshold,
+        entryThreshold: Float = SileroVADRunner.defaultThreshold,
+        exitThreshold: Float = SileroVADRunner.defaultThreshold,
         minSpeechDuration: TimeInterval = 0,
         minSilenceDuration: TimeInterval = 0,
         speechPadding: TimeInterval = 0
@@ -67,8 +67,8 @@ public struct SileroVADSegmenter: Sendable {
 
     public init(
         configuration: SileroVADSegmenterConfiguration = SileroVADSegmenterConfiguration(),
-        sampleRate: Int = SileroVAD.sampleRate,
-        chunkSize: Int = SileroVAD.chunkSize
+        sampleRate: Int = SileroVADRunner.sampleRate,
+        chunkSize: Int = SileroVADRunner.chunkSize
     ) {
         precondition(sampleRate > 0, "sampleRate must be greater than zero")
         precondition(chunkSize > 0, "chunkSize must be greater than zero")
