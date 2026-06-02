@@ -14,8 +14,11 @@ public final class SileroVAD: @unchecked Sendable {
     public convenience init(
         configuration: MLModelConfiguration = MLModelConfiguration()
     ) throws {
-        guard let modelURL = Bundle.module.url(forResource: "SileroVAD", withExtension: "mlpackage") else {
-            throw SileroVADError.bundledModelMissing("SileroVAD.mlpackage was not found in package resources.")
+        guard let modelURL = Bundle.module.url(forResource: "SileroVADModel", withExtension: "mlmodelc")
+            ?? Bundle.module.url(forResource: "SileroVADModel", withExtension: "mlpackage") else {
+            throw SileroVADError.bundledModelMissing(
+                "SileroVADModel.mlmodelc or SileroVADModel.mlpackage was not found in package resources."
+            )
         }
 
         try self.init(modelURL: modelURL, configuration: configuration)

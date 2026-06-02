@@ -25,7 +25,7 @@ let package = Package(
     targets: [
         .target(
             name: "SileroCoreML",
-            resources: [.copy("Resources/SileroVAD.mlpackage")]
+            resources: [.copy("Resources/SileroVADModel.mlpackage")]
         ),
         .executableTarget(
             name: "SileroVADExample",
